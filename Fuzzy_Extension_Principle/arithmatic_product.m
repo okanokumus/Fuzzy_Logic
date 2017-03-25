@@ -37,7 +37,7 @@ function [output] = arithmatic_product(AA, BB)
      % it will be after max operation between the same elements 
     output = [unique(total_matrix(:,1)) zeros(size(no_unique_members))];
 
-    for i=1:no_total_elements; 
+    for i=1:ctr; % 1 to the size(total_matrix(:,1)) also equals to ctr 
         if (total_matrix_extended(i,1)== total_matrix_extended(i+1,1))
             output(ic(i),2) = max(total_matrix_extended(i,2),total_matrix_extended(i+1,2));
         else
