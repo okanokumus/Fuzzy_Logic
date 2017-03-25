@@ -19,3 +19,4 @@ Bx = [5 6 7];
 AA = [A;Ax];
 BB = [B;Bx];
 C = arithmatic_product(AA,BB);
+D = arithmatic_sum(AA,BB);
