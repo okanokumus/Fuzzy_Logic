@@ -96,14 +96,14 @@ end
 
 %% 
 % universe of discourse
-% plot “weight of people” icluding the following fuzzy sets :
-% “very light”, “light”, “average”, “heavy”, “very heavy”
+% plot â€œweight of peopleâ€ icluding the following fuzzy sets :
+% â€œvery lightâ€, â€œlightâ€, â€œaverageâ€, â€œheavyâ€, â€œvery heavyâ€
 % trimf will be used
-x = 0:0.01:10;
-y1 = trimf(x,[0 1 2]); % very light 
-y2 = trimf(x,[2 3 4]); % light
-y3 = trimf(x,[4 5 6]); % average
-y4 = trimf(x,[6 7 8]); % heavy
-y5 = trimf(x,[8 9 10]); % very heavy
+x = 25:0.01:90;
+y1 = trimf(x,[25 30 40]); % very light 
+y2 = trimf(x,[40 50 60]); % light
+y3 = trimf(x,[60 65 70]); % average
+y4 = trimf(x,[70 75 80]); % heavy
+y5 = trimf(x,[80 85 90]); % very heavy
 plot (x,y1,x,y2,x,y3,x,y4,x,y5)
 legend('very light', 'light', 'average', 'heavy', 'very heavy')
