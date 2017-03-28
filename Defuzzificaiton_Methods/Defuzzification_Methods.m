@@ -82,7 +82,8 @@ t1.Color = 'red';
 pause
 %% Part-2 (mostly depends on the Part-1)
 gray = 0.7*[1 1 1];
-x = 0:0.01:12;
+x_sampling= 1000; % sampling period of x
+x = 0:1/x_sampling:12;
 mf1 = trimf(x,[1 3 5]);
 mf2 = trimf(x,[5 7 9]);
 mf3 = trapmf(x,[2 4 10 11])*0.5;
@@ -121,3 +122,5 @@ h5.Color = gray;
 t5.Color = gray;
 h1.Color = 'red';
 t1.Color = 'red';
+% pass_fuzzy_to_crisp_set(x,mf,x5,x_sampling);
+% it can be used in different input values.
