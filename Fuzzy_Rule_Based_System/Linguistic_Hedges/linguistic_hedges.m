@@ -1,6 +1,6 @@
 % linguistic egdes
-% ‘’very’’ , ’’low’’ , ’’slight’’ , ’’more or less’’ , ’’fairly’’ , ’’slightly’’ ,’’ almost’’,
-% ’’barely’’ , ’’mostly’’ , ’’roughly’’ , ’’approximately’’ , etc...
+% â€˜â€™veryâ€™â€™ , â€™â€™lowâ€™â€™ , â€™â€™slightâ€™â€™ , â€™â€™more or lessâ€™â€™ , â€™â€™fairlyâ€™â€™ , â€™â€™slightlyâ€™â€™ ,â€™â€™ almostâ€™â€™,
+% â€™â€™barelyâ€™â€™ , â€™â€™mostlyâ€™â€™ , â€™â€™roughlyâ€™â€™ , â€™â€™approximatelyâ€™â€™ , etc...
 clc
 clear all 
 close all
@@ -37,16 +37,16 @@ title('Dilations of A')
 figure
 % draws a line through to the y(x) =0.5
 y = zeros(size(x))+0.5; % because of matrix dimension must be the same size
-plot(x,A,x,y)
+plot(x,A,x,y,'--g')
 hold on
 for i=-10:0.01:40;
     k = ceil((i+10)*100 +1);
     if (A(k)<=0.5)
-       plot(i, 2*(A(k).^2),'.r','LineWidth',0.25)
+       plot(i, 2*(A(k).^2),'.r')
        hold on
     end
     if (A(k)>=0.5)
-       plot(i,1- 2*((1-A(k)).^2),'.r','LineWidth',0.25)
+       plot(i,1- 2*((1-A(k)).^2),'.r')
        hold on
     end
 end
