@@ -38,7 +38,7 @@ rules = [1 1 1 1 1;
  showrule(fis)
  
  % plots
- figure('Name','Inpýt/Output','NumberTitle','off')
+ figure('Name','Input/Output','NumberTitle','off')
  subplot(221);plotmf(fis,'input',1)
  title ('height of grass(cm)')
  subplot(222);plotmf(fis,'input',2)
