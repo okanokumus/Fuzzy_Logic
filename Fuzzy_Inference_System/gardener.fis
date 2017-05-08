@@ -31,7 +31,7 @@ MF3='wide':'trimf',[300 500 500]
 Name='tip'
 Range=[0 50]
 NumMFs=3
-MF1='little':'gauss2mf',[6 1 7 5]
+MF1='little':'gauss2mf',[6 1.001 7 5]
 MF2='medium':'gbellmf',[8 2 25]
 MF3='much':'gauss2mf',[6 48 6 50]
 
