@@ -24,6 +24,7 @@ fis = addmf(fis, 'output', 1, 'much', 'gauss2mf', [6 48 6 50]);
 % rulelist of the system. for more info and how construct array to
 % write'help addrule' to the command line. If we explain briefly the order 
 % [index_of_input1 index_of_input2 index_of_output weight(0-1) AND(1)/OR(2)]
+% [-1 -1 2 1 1]; we show 'not' using '-'
 rules = [1 1 1 1 1;
          1 2 2 1 1;
          1 3 3 1 1;
